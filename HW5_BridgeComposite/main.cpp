@@ -69,13 +69,14 @@ int main()
         std::cout << "2 - Food" << std::endl;
         std::cout << "3 - Petrol" << std::endl;
         std::cout << "4 - Exit" << std::endl;
-        std::cout << "-->";
+        std::cout << "============" << std::endl;
+        std::cout << "Enter -> ";
         std::cin >> m;
         switch (m) {
         case 1:
             container->getCargo();
             truck->getVehicle();            
-            cargo = std::make_shared<CompositeCargo>(container); // ХЗ что????
+           // cargo = std::make_shared<CompositeCargo>(container); // ХЗ что????
             truck->cargoInVehicle(cargo);
 
             break;
